@@ -1,0 +1,43 @@
+{
+  "name": "di-ts-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
+    "dev": "ts-node-dev -r tsconfig-paths/register --no-notify --inspect --transpile-only --ignore-watch node_modules src/index.ts",
+    "start": "ts-node src/index.ts",
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test:verbose": "jest --passWithNoTests --runInBand",
+    "test:unit": "npm test -- --watch --config jest-unit-config.js",
+    "test:unit:verbose": "npm run test:verbose -- --watch --config jest-unit-config.js",
+    "test:integration": "npm test -- --watch --config jest-integration-config.js",
+    "test:integration:verbose": "npm run test:verbose -- --watch --config jest-integration-config.js",
+    "test:ci": "npm test -- --coverage",
+    "test:clear": "jest --clearCache && rimraf coverage"
+  },
+  "dependencies": {
+    "tslib": "^1.13.0",
+    "tsyringe": "^4.3.0"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.1",
+    "@types/jest": "^26.0.6",
+    "jest": "^26.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.3",
+    "ts-node-dev": "^1.0.0-pre.54",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenderpmachado/di-ts-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wenderpmachado/di-ts-sample/issues"
+  },
+  "homepage": "https://github.com/wenderpmachado/di-ts-sample#readme"
+}
