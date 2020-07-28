@@ -1,5 +1,7 @@
 # Dependency Injection Sample
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/191b0b4aa785a3c7c7a7/maintainability)](https://codeclimate.com/github/wenderpmachado/di-ts-sample/maintainability)
+
 ## :construction_worker: Installation
 
 **You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then in order to clone the project via HTTPS, run this command:**
