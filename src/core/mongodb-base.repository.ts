@@ -1,29 +1,30 @@
-// export interface IRepository<T, U, V> {
-//   create(data: U): Promise<T>
-//   save(user: T): Promise<T>
-//   findAll(data: V): Promise<T[]>
-//   findById(id: string): Promise<T | undefined>
-// }
+// import { Collection, ObjectId, OptionalId } from "mongodb";
+// import { IRepository } from "./repository.base";
 
-// export interface IDB<T, U> {
-//   save(data: U): Promise<T>
-// }
+// export class MongoDBBaseRepository<T, U extends OptionalId<T>, V, W extends string>
+//        implements IRepository<T, U, V, W> {
 
-// export class MongoDBBaseRepository<T, U, V> implements IRepository<T, U, V> {
-//   constructor(private db: IDB<T, U>) {}
+//   constructor(private collection: Collection<T>) {}
 
-//   create(data: U): Promise<T> {
-//     return this.db.save(data);
+//   async create(data: U): Promise<T> {
+//     const result = await this.collection.insertOne(data);
+//     return result.ops[0] as T;
 //   }
 
-//   save(user: T): Promise<T> {
+//   async updateById(id: string, data: U): Promise<T> {
+//     const objectId = new ObjectId(id)
+//     const result = await this.collection.updateOne({ _id: objectId }, data);
+//     return result.ops[0] as T;
 //   }
 
-//   findAll(data: V): Promise<T[]> {
+//   async save(user: T): Promise<T> {
 //   }
 
-//   findById(id: string): Promise<T | undefined> {
+//   async findAll(data: V): Promise<T[]> {
+//   }
+
+//   async findById(id: string): Promise<T | undefined> {
 //     const objectId = ObjectId(id);
-//     return this.db.findById(id);
+//     return this.collection.findById(id);
 //   }
 // }
