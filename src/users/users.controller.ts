@@ -1,16 +1,26 @@
 import { inject, injectable } from 'tsyringe';
 import { IUsersService } from './users.service'
-import { IUser } from './user.model';
+import { IUser, ICreateUser } from './user.model';
 
 export interface IUserController {
-  getAll(): IUser[];
+  // create(user: ICreateUser): IUser;
+  // create(user: IUser): IUser;
+  // getAll(): IUser[];
 }
 
 @injectable()
 export default class UsersController {
   constructor(@inject('IUsersService') private usersService: IUsersService) {}
 
-  getAll() {
-    return this.usersService.getAll();
-  }
+  // create(user: ICreateUser) {
+  //   this.usersService.create();
+  // }
+
+  // update(user: IUser) {
+  //   user.id
+  // }
+
+  // getAll() {
+  //   return this.usersService.getAll();
+  // }
 }
