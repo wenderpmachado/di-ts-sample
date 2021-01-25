@@ -23,7 +23,7 @@
     "ts-jest": "^26.4.4",
     "ts-node-dev": "^1.0.0-pre.54",
     "tsconfig-paths": "^3.9.0",
-    "typescript": "^3.9.7"
+    "typescript": "^4.1.3"
   },
   "repository": {
     "type": "git",
