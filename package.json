@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "yarn lint && yarn test && tsc -p .",
     "dev": "ts-node-dev -r tsconfig-paths/register --no-notify --inspect --transpile-only --ignore-watch node_modules src/index.ts",
     "start": "ts-node src/index.ts",
+    "lint": "eslint .",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:clear": "jest --clearCache && rimraf coverage"
@@ -17,8 +19,12 @@
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.5",
+    "@types/eslint": "^7.2.12",
     "@types/jest": "^26.0.23",
+    "eslint": "^7.27.0",
+    "eslint-plugin-unicorn": "^32.0.1",
     "jest": "^26.6.3",
+    "mongodb-memory-server": "^6.9.6",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.5.6",
     "ts-node-dev": "^1.1.6",
@@ -34,5 +40,8 @@
   "bugs": {
     "url": "https://github.com/wenderpmachado/di-ts-sample/issues"
   },
-  "homepage": "https://github.com/wenderpmachado/di-ts-sample#readme"
+  "homepage": "https://github.com/wenderpmachado/di-ts-sample#readme",
+  "eslintConfig": {
+		"extends": "plugin:unicorn/recommended"
+	}
 }

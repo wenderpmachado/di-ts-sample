@@ -1,5 +1,5 @@
-import { IUser } from './user.model'
-import usersData from './users.json'
+import { IUser } from './user.model';
+import usersData from './users.json';
 
 export interface IUsersRepository {
   getAll(): IUser[];
