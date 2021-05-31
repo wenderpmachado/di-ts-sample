@@ -1,8 +1,8 @@
 import 'reflect-metadata';
-
 import { container } from 'tsyringe';
-import UserService from './users.service';
 import UserRepository from './users.repository';
+import UserService from './users.service';
+
 
 container.register('IUsersService', {
   useClass: UserService

@@ -1,6 +1,6 @@
-import { injectable, inject } from 'tsyringe';
-import { IUsersRepository } from './users.repository'
+import { inject, injectable } from 'tsyringe';
 import { IUser } from './user.model';
+import { IUsersRepository } from './users.repository';
 
 export interface IUsersService {
   getAll(): IUser[];

@@ -1,6 +1,6 @@
 import { inject, injectable } from 'tsyringe';
-import { IUsersService } from './users.service'
 import { IUser } from './user.model';
+import { IUsersService } from './users.service';
 
 export interface IUserController {
   getAll(): IUser[];

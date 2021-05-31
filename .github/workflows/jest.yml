@@ -41,8 +41,8 @@ jobs:
         run: yarn install --frozen-lockfile
 
         # build before testing as some tests actually test the build
-      - name: Build
-        run: yarn build
+      # - name: Build
+      #   run: yarn build
 
       - name: Lint
         run: yarn lint

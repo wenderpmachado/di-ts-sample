@@ -1,6 +1,7 @@
 // const { compilerOptions } = require('./tsconfig.json')
 // const { pathsToModuleNameMapper } = require('ts-jest/utils')
 
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
