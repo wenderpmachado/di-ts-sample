@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { container } from 'tsyringe';
 import '../../src/users/user.ioc';
 import UserController from '../../src/users/users.controller';
