@@ -574,10 +574,10 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
-"@types/eslint@^7.2.12":
-  version "7.2.12"
-  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.2.12.tgz#fefaa48a4db2415b621fe315e4baeedde525927e"
-  integrity sha512-HjikV/jX6e0Pg4DcB+rtOBKSrG6w5IaxWpmi3efL/eLxMz5lZTK+W1DKERrX5a+mNzL78axfsDNXu7JHFP4uLg==
+"@types/eslint@^7.2.14":
+  version "7.2.14"
+  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.2.14.tgz#088661518db0c3c23089ab45900b99dd9214b92a"
+  integrity sha512-pESyhSbUOskqrGcaN+bCXIQDyT5zTaRWfj5ZjjSlMatgGjIn3QQPfocAu4WSabUR7CGyLZ2CQaZyISOEX7/saw==
   dependencies:
     "@types/estree" "*"
     "@types/json-schema" "*"
