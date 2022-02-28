@@ -21,7 +21,7 @@
     "@shelf/jest-mongodb": "^1.2.5",
     "@types/eslint": "^7.2.12",
     "@types/jest": "^26.0.23",
-    "eslint": "^7.27.0",
+    "eslint": "^8.10.0",
     "eslint-plugin-unicorn": "^32.0.1",
     "jest": "^26.6.3",
     "mongodb-memory-server": "^6.9.6",
